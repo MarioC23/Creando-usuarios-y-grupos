@@ -1,0 +1,47 @@
+Para la creacion de grupos y usuarios tendremos que
+entrar al usuario con privilegios y usariamos el comando
+"root" o el comando "su" 
+
+debian loging:(usuario)
+password: 
+
+usuario@debian:~$ su
+password:
+
+----------------------------------------------------------
+Luego procedemos a la creacion de grupo:
+
+groupadd Casa
+
+para verificar que el grupo se creo usamos
+el comando:
+
+cat /etc/group
+
+----------------------------------------------------------
+Creacion de usuarios:
+
+useradd Morena
+useradd Mario
+
+para verificar que nuestro usuario se creo usamos
+el comando "cat /etc/passwd" o el comando "id (combre del usuario)"
+
+----------------------------------------------------------
+agregar usuarios a un grupo:
+
+adduser Morena Casa
+adduser Mario Casa
+
+----------------------------------------------------------
+Cambiar el nombre a un grupo:
+
+utilizamos el comando "groupmod -g 1009 -n Familia Casa"
+
+y volvemos a utilizar el comando "cat /etc/group" para
+ver que si se cambio el nombre del grupo
+
+
+
+
+
